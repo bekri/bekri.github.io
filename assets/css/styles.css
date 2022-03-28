@@ -616,6 +616,85 @@ footer span a:hover{
 }
 
 /*=============== BREAKPOINTS ===============*/
+@media (max-width: 1104px) {
+  .about .about-content .left img{
+      height: 350px;
+      width: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .max-width{
+      padding: 0 50px;
+  }
+}
+@media (max-width: 947px){
+  .home .home-content .text-2{
+      font-size: 70px;
+  }
+  .home .home-content .text-3{
+      font-size: 35px;
+  }
+  .home .home-content a{
+      font-size: 23px;
+      padding: 10px 30px;
+  }
+  .max-width{
+      max-width: 930px;
+  }
+  .about .about-content .column{
+      width: 100%;
+  }
+  .about .about-content .left{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+  }
+  .about .about-content .right{
+      flex: 100%;
+  }
+  .skills .skills-content .column,
+  .contact .contact-content .column{
+      width: 100%;
+      margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width{
+      padding: 0 23px;
+  }
+  .home .home-content .text-2{
+      font-size: 60px;
+  }
+  .home .home-content .text-3{
+      font-size: 32px;
+  }
+  .home .home-content a{
+      font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .home-content .text-2{
+      font-size: 50px;
+  }
+  .home .home-content .text-3{
+      font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text{
+      font-size: 19px;
+  }
+  .contact .right form .fields{
+      flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email{
+      margin: 0;
+  }
+  .right form .error-box{
+     width: 150px;
+  }
+}
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -637,9 +716,6 @@ footer span a:hover{
     margin-left: auto;
     margin-right: auto;
   }
-  .section {
-    padding: 7rem 0 2rem;
-  }
   .header__nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -660,6 +736,6 @@ footer span a:hover{
     font-size: var(--normal-font-size);
   }
   .nav__link i {
-    font-size: 1.25rem;
+    font-size: 0.850rem;
   }
 }

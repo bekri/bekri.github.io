@@ -370,13 +370,13 @@ body {
   display: inline-flex;
   align-items: center;
   column-gap: 1rem;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   transition: .3s;
 }
 
 .nav__link i {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .nav__link:hover {
@@ -673,6 +673,12 @@ footer span a:hover{
       width: 100%;
       margin-bottom: 35px;
   }
+  .nav__link {
+    font-size: 25px;
+  }
+  .nav__link i {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -691,6 +697,12 @@ footer span a:hover{
   .home .home-content a{
       font-size: 20px;
   }
+  .nav__link {
+    font-size: 22px;
+  }
+  .nav__link i {
+    font-size: 22px;
+  }
 }
 @media (max-width: 500px) {
   .home .home-content .text-1{
@@ -701,6 +713,12 @@ footer span a:hover{
   }
   .home .home-content .text-3{
       font-size: 27px;
+  }
+  .nav__link {
+    font-size: 18px;
+  }
+  .nav__link i {
+    font-size: 18px;
   }
   .about .about-content .right .text,
   .skills .skills-content .left .text{

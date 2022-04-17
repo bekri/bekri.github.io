@@ -551,7 +551,7 @@ body {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 .contact .right form .fields{
   display: flex;
@@ -611,6 +611,35 @@ transition: all 0.3s ease;
 .right form .button-area button:hover{
 color: crimson;
 background: none;
+}
+
+.head{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: crimson;
+}
+.text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: crimson;
+}
+.column p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.contact_bg{
+  display: flex;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  background-color: #1d1d1d;
 }
 
 /* footer section styling */

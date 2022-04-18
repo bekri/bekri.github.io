@@ -619,7 +619,7 @@ background: none;
   font-weight: 600;
   color: crimson;
 }
-.text {
+.column .text {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -629,7 +629,7 @@ background: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: white;
+  color: rgb(83, 83, 83);
 }
 
 .contact_bg{

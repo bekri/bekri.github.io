@@ -17,7 +17,7 @@ const Home = () => {
   {/* LOOPING GIF (BEHIND GRID) */}
   <div className="absolute inset-0 z-0">
     <img
-      src="/loop.gif" // Replace with your actual path
+      src="https://i.imgur.com/EZlzAeT.gif" // Replace with your actual path
       alt="Looping background animation"
       className="w-full h-full object-cover"
     />

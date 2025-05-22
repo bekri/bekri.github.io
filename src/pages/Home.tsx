@@ -8,33 +8,56 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
-  {/* Background effect */}
-  <div className="absolute inset-0 bg-portfolio-background z-0">
-    <div className="absolute inset-0 bg-gradient-to-r from-portfolio-primary/20 to-portfolio-tertiary/20 animate-gradient-x"></div>
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(155,135,245,0.1)_0,rgba(0,0,0,0)_70%)]"></div>
-  </div>
-
-  {/* LOOPING GIF (BEHIND GRID) */}
+  {/* GIF Background */}
   <div className="absolute inset-0 z-0">
     <img
-      src="https://i.imgur.com/EZlzAeT.gif" // Replace with your actual path
-      alt="Looping background animation"
+      src="/your-gif.gif"
+      alt="Animated Background"
       className="w-full h-full object-cover"
+      autoPlay
+      loop
+      muted
     />
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black bg-opacity-60"></div>
   </div>
 
-  {/* Grid decoration */}
-  <div className="absolute inset-0 z-10 bg-[url('data:image/svg+xml;base64,...')] opacity-10 pointer-events-none"></div>
+  {/* Dotted Grid Overlay */}
+  <div className="absolute inset-0 z-10 bg-[url('data:image/svg+xml;base64,...')] opacity-20"></div>
 
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-portfolio-muted flex items-start justify-center p-1">
-            <div className="w-1 h-2 bg-portfolio-muted rounded-full"></div>
-          </div>
-        </div>
-      </section>
-      
+  {/* Optional Gradient Overlay (if you want) */}
+  <div className="absolute inset-0 z-10 bg-gradient-to-r from-portfolio-primary/20 to-portfolio-tertiary/20 animate-gradient-x"></div>
+
+  {/* Content */}
+  <div className="container mx-auto px-4 md:px-6 relative z-20">
+    <div className="max-w-3xl">
+      <h1
+        className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.2s' }}
+      >
+        <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
+      </h1>
+      <p
+        className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.4s' }}
+      >
+        Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
+      </p>
+      <div
+        className="flex flex-wrap gap-4 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.6s' }}
+      >
+        <ButtonCustom to="/portfolio" size="lg">
+          Explore My Work
+        </ButtonCustom>
+        <ButtonCustom to="/contact" variant="outline" size="lg">
+          Get In Touch
+        </ButtonCustom>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Featured Works */}
       <section className="py-20">
         <div className="container mx-auto px-4 md:px-6">

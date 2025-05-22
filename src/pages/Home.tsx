@@ -9,6 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
   {/* Background Video */}
+  {/* Background Video */}
   <video
     className="absolute inset-0 w-full h-full object-cover z-0"
     autoPlay
@@ -23,37 +24,37 @@ const Home = () => {
   {/* Dark overlay for contrast (optional) */}
   <div className="absolute inset-0 bg-black/30 z-0"></div>
 
-  {/* Content */}
-  <div className="container mx-auto px-4 md:px-6 relative z-10">
-    <div className="max-w-3xl">
-      <h1
-        className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
-        style={{ animationDelay: '0.2s' }}
-      >
-        <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
-      </h1>
-      <p
-        className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0"
-        style={{ animationDelay: '0.4s' }}
-      >
-        Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
-      </p>
-      <div
-        className="flex flex-wrap gap-4 animate-fade-in opacity-0"
-        style={{ animationDelay: '0.6s' }}
-      >
-        <ButtonCustom to="/portfolio" size="lg">
-          Explore My Work
-        </ButtonCustom>
-        <ButtonCustom to="/contact" variant="outline" size="lg">
-          Get In Touch
-        </ButtonCustom>
-      </div>
-    </div>
-  </div>
-</section>
+  {/* Dark overlay for contrast (optional) */}
+  <div className="absolute inset-0 bg-black/30 z-0"></div>
 
-        
+  {/* Content */}
+    <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="max-w-3xl">
+        <h1
+          className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
+          style={{ animationDelay: '0.2s' }}
+        >
+          <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
+        </h1>
+        <p
+          className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0"
+          style={{ animationDelay: '0.4s' }}
+        >
+          Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
+        </p>
+        <div
+          className="flex flex-wrap gap-4 animate-fade-in opacity-0"
+          style={{ animationDelay: '0.6s' }}
+        >
+          <ButtonCustom to="/portfolio" size="lg">
+            Explore My Work
+          </ButtonCustom>
+          <ButtonCustom to="/contact" variant="outline" size="lg">
+            Get In Touch
+          </ButtonCustom>
+            </div>
+            </div>
+            </div>       
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 rounded-full border-2 border-portfolio-muted flex items-start justify-center p-1">

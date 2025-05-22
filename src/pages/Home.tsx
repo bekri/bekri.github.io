@@ -8,34 +8,51 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
-        {/* Background effect */}
-        <div className="absolute inset-0 bg-portfolio-background">
-          <div className="absolute inset-0 bg-gradient-to-r from-portfolio-primary/20 to-portfolio-tertiary/20 animate-gradient-x"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(155,135,245,0.1)_0,rgba(0,0,0,0)_70%)]"></div>
-        </div>
-        
-        {/* Grid decoration */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMzMzMzMzMiIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNNTkuNSA1OS41VjU4SDU4djEuNWgtMS41VjYwSDYwdi0uNWgtLjV6TTU4IDU4di0xLjVoLTEuNVY1OEg1OHptLTEuNS0xLjV2LTEuNWgtMS41djEuNUg1Ni41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDU1em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDUzLjV6TTUyIDUydi0xLjVoLTEuNVY1Mkg1MnptLTEuNS0xLjV2LTEuNWgtMS41djEuNUg1MC41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDQ5em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDQ3LjV6TTQ2IDQ2di0xLjVoLTEuNVY0Nkg0NnptLTEuNS0xLjV2LTEuNWgtMS41djEuNUg0NC41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDQzem0tMS41LTEuNXYtMS41aC0xLjV2MS41SDQxLjV6TTQwIDQwdi0xLjVoLTEuNVY0MEg0MHptLTEuNS0xLjV2LTEuNWgtMS41djEuNUgzOC41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDM3em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDM1LjV6TTM0IDM0di0xLjVoLTEuNVYzNEgzNHptLTEuNS0xLjV2LTEuNWgtMS41djEuNUgzMi41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDMxem0tMS41LTEuNXYtMS41aC0xLjV2MS41SDI5LjV6TTI4IDI4di0xLjVoLTEuNVYyOEgyOHptLTEuNS0xLjV2LTEuNWgtMS41djEuNUgyNi41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDI1em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDIzLjV6TTIyIDIydi0xLjVoLTEuNVYyMkgyMnptLTEuNS0xLjV2LTEuNWgtMS41djEuNUgyMC41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDE5em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDE3LjV6TTE2IDE2di0xLjVoLTEuNVYxNkgxNnptLTEuNS0xLjV2LTEuNWgtMS41djEuNUgxNC41em0tMS41LTEuNXYtMS41aC0xLjV2MS41SDEzem0tMS41LTEuNXYtMS41aC0xLjV2MS41SDExLjV6TTEwIDEwVjguNUg4LjVWMTBIMTB6bS0xLjUgNDh2MS41aDEuNVY1OEg4LjV6TTcgNTdsMS41LjAyVjU1LjVINlY1N2gxek02IDU0di0xLjVINC41VjU0SDZ6bS0xLjUgMHYxLjVIM1Y1NEg0LjV6TTMgNTR2LTEuNUgxLjVWNTRIM3ptLTEuNSAwdjEuNUgwVjU0aDEuNXpNMCA1NHYtMS41aDEuNXYtMUgwdi01MmgxLjV2LTFIMG0wIDEuNWgxLjVWMGgtMy44TTE5LjUgN2gwIiBzdHJva2Utb3BhY2l0eT0iLjIiIHN0cm9rZT0iI2ZmZiIvPjwvZz48L3N2Zz4=')] opacity-10"></div>
-        
-        {/* Content */}
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-              <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
-            </h1>
-            <p className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
-              Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
-            </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in opacity-0" style={{ animationDelay: '0.6s' }}>
-              <ButtonCustom to="/portfolio" size="lg">
-                Explore My Work
-              </ButtonCustom>
-              <ButtonCustom to="/contact" variant="outline" size="lg">
-                Get In Touch
-              </ButtonCustom>
-            </div>
-          </div>
-        </div>
+  {/* Background Video */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover z-0"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/loop.webp" type="video/webp" />
+    Your browser does not support the video tag.
+  </video>
+
+  {/* Dark overlay for contrast (optional) */}
+  <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+  {/* Content */}
+  <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <div className="max-w-3xl">
+      <h1
+        className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.2s' }}
+      >
+        <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
+      </h1>
+      <p
+        className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.4s' }}
+      >
+        Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
+      </p>
+      <div
+        className="flex flex-wrap gap-4 animate-fade-in opacity-0"
+        style={{ animationDelay: '0.6s' }}
+      >
+        <ButtonCustom to="/portfolio" size="lg">
+          Explore My Work
+        </ButtonCustom>
+        <ButtonCustom to="/contact" variant="outline" size="lg">
+          Get In Touch
+        </ButtonCustom>
+      </div>
+    </div>
+  </div>
+</section>
+
         
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

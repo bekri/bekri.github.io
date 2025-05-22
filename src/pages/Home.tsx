@@ -7,44 +7,45 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center overflow-hidden">
-  {/* GIF Background */}
+      <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+  {/* === GIF Background === */}
   <div className="absolute inset-0 z-0">
     <img
-      src="/your-gif.gif"
-      alt="Animated Background"
+      src="https://i.imgur.com/EZlzAeT.gif"
+      alt="Background Animation"
       className="w-full h-full object-cover"
-      autoPlay
-      loop
-      muted
     />
-    {/* Dark Overlay */}
-    <div className="absolute inset-0 bg-black bg-opacity-60"></div>
   </div>
 
-  {/* Dotted Grid Overlay */}
-  <div className="absolute inset-0 z-10 bg-[url('data:image/svg+xml;base64,...')] opacity-20"></div>
+  {/* === Dark Overlay === */}
+  <div className="absolute inset-0 z-10 bg-black bg-opacity-60" />
 
-  {/* Optional Gradient Overlay (if you want) */}
-  <div className="absolute inset-0 z-10 bg-gradient-to-r from-portfolio-primary/20 to-portfolio-tertiary/20 animate-gradient-x"></div>
+  {/* === Dotted Pattern Overlay === */}
+  <div
+    className="absolute inset-0 z-20 opacity-20"
+    style={{
+      backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`,
+      backgroundSize: '20px 20px',
+    }}
+  />
 
-  {/* Content */}
-  <div className="container mx-auto px-4 md:px-6 relative z-20">
+  {/* === Text & Buttons === */}
+  <div className="relative z-30 container mx-auto px-4 md:px-6">
     <div className="max-w-3xl">
       <h1
-        className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in opacity-0"
+        className="text-4xl md:text-6xl font-bold mb-4 text-white animate-fade-in opacity-100"
         style={{ animationDelay: '0.2s' }}
       >
         <span className="text-gradient">Visual Storyteller</span> <br />& 3D Generalist
       </h1>
       <p
-        className="text-xl md:text-2xl text-portfolio-muted mb-8 animate-fade-in opacity-0"
+        className="text-xl md:text-2xl text-portfolio-muted mb-8 text-white animate-fade-in opacity-100"
         style={{ animationDelay: '0.4s' }}
       >
         Creating immersive digital experiences through graphic design, 3D modeling, and UI development.
       </p>
       <div
-        className="flex flex-wrap gap-4 animate-fade-in opacity-0"
+        className="flex flex-wrap gap-4 animate-fade-in opacity-100"
         style={{ animationDelay: '0.6s' }}
       >
         <ButtonCustom to="/portfolio" size="lg">
@@ -57,6 +58,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
       {/* Featured Works */}
       <section className="py-20">

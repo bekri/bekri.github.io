@@ -327,6 +327,18 @@ const projects: Project[] = [
     tools: ["Clip Studio Paint"],
     role: "Digital Artist"
   },
+
+  {
+  id: 13,
+  title: "New Product Instagram Story",
+  category: "Graphic Design",
+  image: "https://i.imgur.com/blBMQ2F.png",
+  description: "An Instagram story made to showcase new POD product that just dropped, This Showcases Design, Mockups and Story.",
+  tools: ["Canva", "Adobe Photoshop"],
+  role: "Graphic Designer",
+  client: "BelleBox Gifts"
+  },
+
 ];
 
 export default Portfolio;

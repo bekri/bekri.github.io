@@ -346,7 +346,16 @@ const projects: Project[] = [
     tools: ["Clip Studio Paint", "Photoshop", "DALE AI" ],
     role: "Character Design, Animator"
   },
-
+  {
+    id: 13,
+    title: "Web Flow Brand Identity Design",
+    category: "Graphic Design",
+    image: "https://i.imgur.com/KQsitYN.png",
+    description: "This is a quick 5-minute concept design created as part of my application for Project Growth. It reflects a clean, storytelling approach to website creation, balancing aesthetics and usability to showcase creative ideas effectively.",
+    tools: ["Canva", "Adobe Photoshop"],
+    role: "Graphic Designer",
+    client: "Project Growth"
+    },
 ];
 
 export default Portfolio;

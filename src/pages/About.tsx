@@ -27,7 +27,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute inset-0 rounded-lg bg-portfolio-primary blur-xl opacity-20 transform -rotate-6"></div>
                 <img 
-                  src="https://i.imgur.com/BGLK4Hh.png" 
+                  src="https://i.imgur.com/iH43A6B.png" 
                   alt="Bekri Zakariae" 
                   className="relative z-10 w-full h-auto rounded-lg object-cover shadow-xl"
                 />

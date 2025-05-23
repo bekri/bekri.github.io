@@ -327,7 +327,6 @@ const projects: Project[] = [
     tools: ["Clip Studio Paint"],
     role: "Digital Artist"
   },
-
   {
   id: 13,
   title: "New Product Instagram Story",
@@ -337,6 +336,15 @@ const projects: Project[] = [
   tools: ["Canva", "Adobe Photoshop"],
   role: "Graphic Designer",
   client: "BelleBox Gifts"
+  },
+  {
+    id: 14,
+    title: "Lumen Character Animation",
+    category: "Digital Painting",
+    image: "https://i.imgur.com/jeqR983.gif",
+    description: "Lumen is a solitary being of living light, born from the last spark in a world consumed by shadow. Quiet and curious, Lumen glows with a soft brilliance that pulses with emotion a light that guides, heals, and reveals hidden paths. Though they do not speak, their journey through darkness speaks volumes. Fragile but determined, Lumen searches the remnants of a broken world not just to escape it, but to understand it and perhaps, to rekindle what was lost. as an Artist, I put my feelings into this character design and his story",
+    tools: ["Clip Studio Paint", "Photoshop", "DALE AI" ],
+    role: "Character Design, Animator"
   },
 
 ];

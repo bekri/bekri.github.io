@@ -356,6 +356,16 @@ const projects: Project[] = [
     role: "Graphic Designer",
     client: "Project Growth"
     },
+    {
+    id: 16,
+    title: "Rippling Identity Design",
+    category: "Graphic Design",
+    image: "https://i.imgur.com/7cvyRpL.png",
+    description: "This is a quick 5-minute concept design created for Rippling, focusing on a clean and intuitive approach to HR & IT management.",
+    tools: ["Canva", "Adobe Photoshop"],
+    role: "Graphic Designer",
+    client: "Project Growth"
+    },
 ];
 
 export default Portfolio;

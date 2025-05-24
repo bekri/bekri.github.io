@@ -4,14 +4,13 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/', // required for GitHub Pages
+  base: '/',
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    // Enable lovable-tagger only in development mode
     mode === 'development' ? componentTagger() : null,
   ].filter(Boolean),
   resolve: {
@@ -20,3 +19,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+

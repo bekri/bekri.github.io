@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <script>
+      // Get the requested path, e.g. "/portfolio"
+      const path = window.location.pathname;
+
+      // Redirect to the same path but with a hash, e.g. "/#/portfolio"
+      window.location.replace('/#' + path);
+    </script>
   </head>
   <body></body>
 </html>

@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      // Get the requested path, e.g. "/portfolio"
       const path = window.location.pathname;
 
-      // Redirect to the same path but with a hash, e.g. "/#/portfolio"
-      window.location.replace('/#' + path);
+      // List of paths to NOT redirect (static files, 404 page, etc.)
+      const noRedirectPaths = ['/', '/404.html', '/index.html'];
+
+      if (!noRedirectPaths.includes(path) && !path.startsWith('/assets/') && !path.includes('.')) {
+        // Redirect only if the path is not root, not 404.html, not index.html,
+        // not inside assets folder, and doesn't contain a dot (to avoid files like CSS, JS)
+        window.location.replace('/#' + path);
+      }
     </script>
   </head>
   <body></body>

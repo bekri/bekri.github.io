@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      const path = window.location.pathname;
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    // redirect all unknown paths back to index.html with the pathname preserved
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
 
-      // List of paths to NOT redirect (static files, 404 page, etc.)
-      const noRedirectPaths = ['/', '/404.html', '/index.html'];
-
-      if (!noRedirectPaths.includes(path) && !path.startsWith('/assets/') && !path.includes('.')) {
-        // Redirect only if the path is not root, not 404.html, not index.html,
-        // not inside assets folder, and doesn't contain a dot (to avoid files like CSS, JS)
-        window.location.replace('/#' + path);
-      }
-    </script>
-  </head>
-  <body></body>
+    // Replace the current page with index.html + original path in query string or hash
+    window.location.replace('/index.html' + '?redirect=' + encodeURIComponent(path + search + hash));
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
 </html>

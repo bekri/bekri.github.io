@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    // redirect all unknown paths back to index.html with the pathname preserved
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+
+    // Replace the current page with index.html + original path in query string or hash
+    window.location.replace('/index.html' + '?redirect=' + encodeURIComponent(path + search + hash));
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

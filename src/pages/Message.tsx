@@ -1,27 +1,15 @@
-// src/pages/message.tsx
-import React from 'react';
-import { Metadata } from 'next';
-import ContactForm from '@/components/ContactForm';
-import Container from '@/components/Container';
-import PageHeader from '@/components/PageHeader';
-
-export const metadata: Metadata = {
-  title: 'Send a Message',
-  description: 'Send emails to employers directly from here.',
-};
+// src/pages/Message.tsx
+import React from "react";
+import ContactForm from "@/components/ContactForm";
 
 export default function MessagePage() {
   return (
-    <Container>
-      <PageHeader
-        title="Send a Message"
-        description="Use this form to contact employers directly."
-      />
-      <div className="grid md:grid-cols-1 gap-8 mt-12">
-        <div>
-          <ContactForm />
-        </div>
-      </div>
-    </Container>
+    <div className="max-w-3xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-4">Send a Message</h1>
+      <p className="text-muted-foreground mb-8">
+        Use this form to contact employers directly.
+      </p>
+      <ContactForm />
+    </div>
   );
 }

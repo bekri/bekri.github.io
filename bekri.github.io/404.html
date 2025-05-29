@@ -27,18 +27,64 @@
 
   <body>
     <div id="root"></div>
-    
+
     <script>
-      // Redirect hash URLs to clean URLs
-      if (window.location.hash) {
-        const hash = window.location.hash.substring(1); // Remove the #
-        if (hash && hash !== '/') {
-          // Replace current URL with clean URL
-          window.history.replaceState(null, null, hash);
+      // Comprehensive hash to clean URL redirection
+      function redirectHashToClean() {
+        if (window.location.hash) {
+          const hash = window.location.hash.substring(1); // Remove the #
+          if (hash && hash !== '/') {
+            // Replace current URL with clean URL
+            window.history.replaceState(null, null, hash);
+            return true;
+          }
         }
+        return false;
       }
+
+      // Initial redirect on page load
+      redirectHashToClean();
+
+      // Listen for hash changes and redirect them
+      window.addEventListener('hashchange', function(e) {
+        e.preventDefault();
+        redirectHashToClean();
+      });
+
+      // Intercept all link clicks and convert hash links to clean URLs
+      document.addEventListener('click', function(e) {
+        const link = e.target.closest('a');
+        if (link && link.href) {
+          const url = new URL(link.href);
+          if (url.hash && url.hash.length > 1) {
+            e.preventDefault();
+            const cleanPath = url.hash.substring(1);
+            window.history.pushState(null, null, cleanPath);
+            // Trigger a popstate event to let React Router handle the new URL
+            window.dispatchEvent(new PopStateEvent('popstate'));
+          }
+        }
+      });
+
+      // Override pushState and replaceState to intercept programmatic navigation
+      const originalPushState = history.pushState;
+      const originalReplaceState = history.replaceState;
+
+      history.pushState = function(state, title, url) {
+        if (url && url.startsWith('#')) {
+          url = url.substring(1);
+        }
+        return originalPushState.call(this, state, title, url);
+      };
+
+      history.replaceState = function(state, title, url) {
+        if (url && url.startsWith('#')) {
+          url = url.substring(1);
+        }
+        return originalReplaceState.call(this, state, title, url);
+      };
     </script>
-    
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </body>

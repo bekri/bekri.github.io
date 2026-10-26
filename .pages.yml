@@ -1,0 +1,120 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+  categories: [image, video]
+
+content:
+  - name: projects
+    label: Portfolio projects
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: category
+        type: select
+        required: true
+        options:
+          values: [3D, Design, Illustration, Web & UI]
+      - name: published
+        label: Show on portfolio
+        type: boolean
+        default: true
+      - name: image
+        label: Main artwork
+        type: image
+        required: true
+        description: Upload your render or design. WebP, PNG and JPEG are supported.
+      - name: description
+        label: About this project
+        type: text
+      - name: tools
+        label: Software and tools
+        type: string
+        list: true
+      - name: role
+        label: Your role
+        type: string
+      - name: client
+        label: Client or personal project
+        type: string
+      - name: gallery
+        label: Additional images
+        type: image
+        options:
+          multiple:
+            max: 20
+      - name: video
+        label: Optional project video
+        type: file
+        options:
+          extensions: [mp4, webm]
+      - name: link
+        label: Optional external project link
+        type: string
+      - name: thumbnail
+        label: Optional smaller preview image
+        type: image
+        description: Leave empty to use the main artwork in the gallery.
+      - name: slug
+        label: Optional custom project URL
+        type: string
+        description: Leave empty for a new project to generate a URL from its title. Keep existing values to preserve shared links.
+
+  - name: site
+    label: Profile and homepage
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: name
+        label: Your name
+        type: string
+        required: true
+      - name: eyebrow
+        label: Professional title
+        type: string
+      - name: headline
+        label: Opening headline
+        type: text
+        description: Use two lines for the opening headline.
+      - name: intro
+        label: Opening introduction
+        type: text
+      - name: location
+        type: string
+      - name: aboutTitle
+        label: About section heading
+        type: text
+      - name: about
+        label: Biography
+        type: text
+      - name: skills
+        label: Toolbox
+        type: string
+        list: true
+      - name: email
+        type: string
+        required: true
+      - name: phone
+        label: WhatsApp number with country code
+        type: string
+      - name: artstation
+        label: ArtStation URL
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: heroPoster
+        label: Opening still image
+        type: image
+      - name: heroVideo
+        label: Opening animation video
+        type: file
+        options:
+          extensions: [mp4, webm]

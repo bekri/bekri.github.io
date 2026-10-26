@@ -1,33 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bekri Zakariae - Graphic Design Portfolio</title>
-    <meta name="description" content="Visual Storyteller & 3D Generalist - Portfolio showcasing graphic design, 3D modeling, and UI/UX work" />
-    <meta name="author" content="Bekri Zakariae" />
-
-    <meta property="og:title" content="Bekri Zakariae - Graphic Design Portfolio" />
-    <meta property="og:description" content="Visual Storyteller & 3D Generalist - Portfolio showcasing graphic design, 3D modeling, and UI/UX work" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101411" />
+    <title>Zakariae Bekri | 3D Artist & Visual Designer</title>
+    <meta
+      name="description"
+      content="Selected 3D models, product renders, interior visualizations and design by Zakariae Bekri, a visual designer based in Morocco."
+    />
+    <meta
+      property="og:title"
+      content="Zakariae Bekri | 3D Artist & Visual Designer"
+    />
+    <meta
+      property="og:description"
+      content="Objects, spaces and stories. Explore selected work in 3D and visual design."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://i.imgur.com/NN09rmL.png" />
-
-    <meta name="twitter:card" content="https://i.imgur.com/NN09rmL.png" />
-    <meta name="twitter:image" content="https://i.imgur.com/NN09rmL.png" />
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script type="module" crossorigin src="/assets/index-9x0XI7OH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CU15jjQm.css">
+    <meta property="og:url" content="https://bekri.github.io/" />
+    <meta
+      property="og:image"
+      content="https://bekri.github.io/media/embers-frost-lounge.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/media/hero-poster.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
   </head>
-
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <a class="skip-link" href="#work">Skip to work</a>
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="#home" aria-label="Zakariae Bekri, home"
+        ><span class="monogram" aria-hidden="true"
+          >zb<span
+            ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#spark"></use></svg></span></span
+        ><span class="wordmark-name" data-site="name">Zakariae Bekri</span></a
+      >
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">Work <sup>01</sup></a
+        ><a href="#about">About <sup>02</sup></a
+        ><a href="#contact"
+          >Let’s talk
+          <span aria-hidden="true"
+            ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#arrow-up-right"></use></svg></span
+        ></a>
+      </nav>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        Menu
+        <span aria-hidden="true"
+          ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <use href="/icons.svg#plus"></use></svg
+        ></span>
+      </button>
+    </header>
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="#work">Selected work <span>01</span></a
+      ><a href="#about">About me <span>02</span></a
+      ><a href="#contact"
+        >Let’s talk
+        <span
+          ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <use href="/icons.svg#arrow-up-right"></use></svg></span
+      ></a>
+    </nav>
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            class="hero-poster"
+            id="hero-poster"
+            src="/media/hero-poster.webp"
+            width="1920"
+            height="1080"
+            alt=""
+            fetchpriority="high"
+          /><video
+            id="hero-video"
+            class="hero-video"
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="/media/hero-poster.webp"
+            tabindex="-1"
+          ></video>
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-topline">
+          <span class="eyebrow" id="hero-eyebrow"
+            >3D artist & visual designer</span
+          ><span class="location"
+            ><span class="tiny-cross" aria-hidden="true"
+              ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#spark"></use></svg></span
+            ><span data-site="location">Based in Morocco</span></span
+          >
+        </div>
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>A little imagination.</span
+            ><span>A different <em>world.</em></span>
+          </h1>
+          <div class="hero-bottom">
+            <p id="hero-intro">
+              Objects, spaces and stories. Exploring ideas through 3D, design
+              and digital art.
+            </p>
+            <a class="round-link" href="#work" aria-label="Explore my work"
+              ><span>Explore my work</span
+              ><span class="round-arrow" aria-hidden="true"
+                ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <use href="/icons.svg#arrow-down"></use></svg></span
+            ></a>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <span class="mono">SCROLL TO DISCOVER</span
+          ><span class="hero-caption mono">A WINDOW INTO MY IMAGINATION</span
+          ><button
+            class="motion-toggle"
+            id="motion-toggle"
+            aria-pressed="false"
+            aria-label="Pause animation"
+          >
+            <span id="motion-icon" aria-hidden="true"
+              ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#pause"></use></svg></span
+            ><span id="motion-label">Pause motion</span>
+          </button>
+        </div>
+      </section>
+      <section class="work section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-kicker reveal">
+          <span class="mono">01 / SELECTED WORK</span
+          ><span class="mono"
+            >IDEA
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#arrow-right"></use>
+            </svg>
+            FORM
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#arrow-right"></use>
+            </svg>
+            FEELING</span
+          >
+        </div>
+        <div class="section-heading reveal">
+          <h2 id="work-title">Made to <em>be seen.</em></h2>
+          <p>
+            A selection of objects, environments<br />and visual explorations.
+          </p>
+        </div>
+        <div class="work-toolbar reveal">
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter active" data-filter="3D" aria-pressed="true">
+              3D <span></span></button
+            ><button class="filter" data-filter="Design" aria-pressed="false">
+              Design <span></span></button
+            ><button
+              class="filter"
+              data-filter="Illustration"
+              aria-pressed="false"
+            >
+              Illustration <span></span></button
+            ><button class="filter" data-filter="Web & UI" aria-pressed="false">
+              Web & UI <span></span></button
+            ><button class="filter" data-filter="All" aria-pressed="false">
+              All work <span></span>
+            </button>
+          </div>
+          <span
+            class="mono project-count"
+            id="project-count"
+            role="status"
+            aria-live="polite"
+            >Loading projects</span
+          >
+        </div>
+        <div class="project-grid" id="project-grid" aria-busy="true">
+          <p class="loading-note">Loading selected work…</p>
+        </div>
+        <div class="work-end">
+          <span class="mono">ALWAYS EXPLORING. ALWAYS MAKING.</span
+          ><a
+            class="text-link"
+            data-link="artstation"
+            href="https://bekrizakariae.artstation.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >More on ArtStation
+            <span aria-hidden="true"
+              ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#arrow-up-right"></use></svg></span
+          ></a>
+        </div>
+      </section>
+      <section
+        class="about section-pad"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-kicker reveal">
+          <span class="mono">02 / THE PERSON BEHIND THE PIXELS</span
+          ><span class="tiny-cross" aria-hidden="true"
+            ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#spark"></use></svg
+          ></span>
+        </div>
+        <div class="about-layout">
+          <div class="about-art reveal">
+            <div class="art-frame">
+              <img
+                id="about-image"
+                src="/media/lumen-character-animation-thumb.webp"
+                alt="Lumen, a character animation by Zakariae Bekri"
+                loading="lazy"
+                width="800"
+                height="800"
+              /><span class="art-bracket tl" aria-hidden="true"></span
+              ><span class="art-bracket br" aria-hidden="true"></span>
+            </div>
+            <div class="art-caption mono">
+              <span>EXPLORATIONS IN CHARACTER & STORY</span
+              ><span
+                ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <use href="/icons.svg#arrow-up-right"></use></svg
+              ></span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <h2 class="reveal" id="about-title">
+              An eye for detail.<br />A mind for <em>possibility.</em>
+            </h2>
+            <div class="about-bio reveal" id="about-bio">
+              <p>
+                I’m Zakariae, a visual designer working across 3D modeling,
+                product visualization and graphic design.
+              </p>
+            </div>
+            <div class="toolbox reveal">
+              <span class="mono">MY TOOLBOX</span>
+              <ul id="skills">
+                <li>Blender</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Clip Studio Paint</li>
+                <li>Figma</li>
+                <li>WordPress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact section-pad"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="section-kicker reveal">
+          <span class="mono">03 / HAVE SOMETHING IN MIND?</span
+          ><span class="mono">LET’S MAKE IT HAPPEN</span>
+        </div>
+        <a
+          class="contact-heading reveal"
+          id="contact-email"
+          href="mailto:bzpw00@gmail.com"
+          ><h2 id="contact-title">Let’s make<br /><em>something real.</em></h2>
+          <span class="contact-arrow" aria-hidden="true"
+            ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#arrow-up-right"></use></svg></span
+        ></a>
+        <div class="contact-bottom reveal">
+          <a class="email-link" data-link="email" href="mailto:bzpw00@gmail.com"
+            >bzpw00@gmail.com</a
+          >
+          <div class="social-links">
+            <a
+              data-link="artstation"
+              href="https://bekrizakariae.artstation.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ArtStation
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#arrow-up-right"></use></svg></a
+            ><a
+              data-link="linkedin"
+              href="https://www.linkedin.com/in/zakariae-bekri-185372360/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#arrow-up-right"></use></svg></a
+            ><a
+              data-link="whatsapp"
+              href="https://wa.me/212787013028"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WhatsApp
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <use href="/icons.svg#arrow-up-right"></use></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span
+        >© <span id="year">2026</span>
+        <span data-site="name">Zakariae Bekri</span></span
+      ><span class="mono footer-note">A WORK IN PROGRESS, JUST LIKE ME.</span
+      ><a href="#home"
+        >Back to top
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+          <use href="/icons.svg#arrow-up"></use></svg
+      ></a>
+    </footer>
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="project-title"
+    >
+      <div class="dialog-top">
+        <a
+          href="#work"
+          class="dialog-wordmark"
+          aria-label="Back to selected work"
+          >zb.</a
+        ><span class="mono" id="dialog-counter"></span
+        ><button
+          class="dialog-close"
+          id="dialog-close"
+          aria-label="Close project"
+        >
+          Close
+          <span aria-hidden="true"
+            ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <use href="/icons.svg#close"></use></svg
+          ></span>
+        </button>
+      </div>
+      <div id="project-detail"></div>
+    </dialog>
+    <div class="project-cursor" id="project-cursor" aria-hidden="true">
+      VIEW<br />PROJECT
+      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+        <use href="/icons.svg#arrow-up-right"></use>
+      </svg>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><div class="noscript">
+        JavaScript is needed to load the project gallery. You can also
+        <a href="https://bekrizakariae.artstation.com/"
+          >view my work on ArtStation</a
+        >
+        or email <a href="mailto:bzpw00@gmail.com">bzpw00@gmail.com</a>.
+      </div></noscript
+    >
   </body>
 </html>

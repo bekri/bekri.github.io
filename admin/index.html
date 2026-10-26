@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Portfolio editor | Zakariae Bekri</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      main {
+        max-width: 640px;
+        margin: 12vh auto;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      p,
+      li {
+        font-size: 14px;
+        line-height: 1.9;
+        color: var(--muted);
+      }
+      p {
+        margin: 24px 0;
+      }
+      ol {
+        padding-left: 22px;
+      }
+      .editor-button {
+        display: inline-flex;
+        background: var(--accent);
+        color: var(--bg);
+        padding: 15px 24px;
+        border-radius: 30px;
+        margin: 12px 0;
+      }
+      .back {
+        display: block;
+        margin-top: 35px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="mono">PORTFOLIO MANAGEMENT</span>
+      <h1 style="margin-top: 22px">Your next project<br />belongs here.</h1>
+      <p>
+        Add artwork and update your portfolio through Pages CMS. Your files stay
+        in GitHub.
+      </p>
+      <a
+        class="editor-button"
+        href="https://app.pagescms.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Open portfolio editor
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+          <use href="/icons.svg#arrow-up-right"></use></svg
+      ></a>
+      <ol>
+        <li>Sign in with your GitHub account.</li>
+        <li>
+          On the first visit, allow the Pages CMS GitHub App to access
+          <strong>bekri.github.io</strong>.
+        </li>
+        <li>
+          Open <strong>bekri / bekri.github.io</strong> and choose the published
+          branch (<strong>main</strong> after the rework is merged).
+        </li>
+        <li>
+          Open <strong>Portfolio projects</strong>, add a project, upload
+          artwork and save. You can drag entries to reorder them.
+        </li>
+      </ol>
+      <p>
+        Changes appear after GitHub Pages finishes publishing. While reviewing
+        the rework, choose the <strong>portfolio-3d-rework</strong> branch to
+        edit the new content without changing the live site.
+      </p>
+      <a class="back" href="/"
+        ><svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+          <use href="/icons.svg#arrow-left"></use>
+        </svg>
+        Back to portfolio</a
+      >
+    </main>
+  </body>
+</html>

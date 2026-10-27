@@ -1,11 +1,9 @@
 [
   {
     "title": "Embers & Frost Lounge",
-    "slug": "embers-frost-lounge",
     "category": "3D",
     "published": true,
     "image": "/media/embers-frost-lounge.webp",
-    "thumbnail": "/media/embers-frost-lounge-thumb.webp",
     "description": "A cozy, wood-paneled lounge bathed in soft daylight from floor-to-ceiling windows revealing a snowy landscape beyond. In the foreground, a marble countertop holds a bottle of whiskey and a tumbler of amber spirit, inviting you to unwind by the minimalist coffee table and low-profile sofa beneath a framed deer watercolor.",
     "tools": [
       "Blender",
@@ -13,17 +11,14 @@
     ],
     "role": "interior visualization",
     "client": "Fiverr Client",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/embers-frost-lounge-thumb.webp",
+    "slug": "embers-frost-lounge"
   },
   {
     "title": "Elexirus Anubis: Essence of the Ancients",
-    "slug": "elexirus-anubis-essence-of-the-ancients",
     "category": "3D",
     "published": true,
     "image": "/media/elexirus-anubis-essence-of-the-ancients.webp",
-    "thumbnail": "/media/elexirus-anubis-essence-of-the-ancients-thumb.webp",
     "description": "This project showcases a comprehensive branding and packaging design for a luxury cosmetic line named Anubis, developed under the brand Elexireus. The work involved designing a minimalist and symbolic logo, crafting a clean and balanced label layout, and applying a color-coded system to differentiate product variants. Emphasis was placed on typography hierarchy, spacing, and alignment to ensure legibility and elegance on a cylindrical surface. Once the 2D design was finalized, it was seamlessly integrated into a 3D mockup environment, highlighting the final product through realistic lighting, shadows, and composition. The final presentation merges both graphic and 3D design disciplines to deliver a high-end visual that communicates sophistication, clarity, and modern luxury — suitable for client presentations or product marketing assets.",
     "tools": [
       "Blender",
@@ -31,17 +26,14 @@
     ],
     "role": "Graphic Designer & 3D artist",
     "client": "Project Elexir",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/elexirus-anubis-essence-of-the-ancients-thumb.webp",
+    "slug": "elexirus-anubis-essence-of-the-ancients"
   },
   {
     "title": "Zach's Imaginary Lemonade",
-    "slug": "zach-s-imaginary-lemonade",
     "category": "3D",
     "published": true,
     "image": "/media/zach-s-imaginary-lemonade.webp",
-    "thumbnail": "/media/zach-s-imaginary-lemonade-thumb.webp",
     "description": "Simple 3D Lemonade Can Made In Blender.",
     "tools": [
       "Blender",
@@ -50,35 +42,28 @@
     ],
     "role": "Lead 3D Artist and Lighting Specialist",
     "client": "Personal Project",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/zach-s-imaginary-lemonade-thumb.webp",
+    "slug": "zach-s-imaginary-lemonade"
   },
   {
     "title": "Moroccan Wine",
-    "slug": "moroccan-wine",
     "category": "3D",
     "published": true,
     "image": "/media/moroccan-wine.webp",
-    "thumbnail": "/media/moroccan-wine-thumb.webp",
     "description": "A sleek, 3D-rendered wine bottle crowned with a vibrant label that marries traditional Moroccan tile patterns and the classic red tarbouch. Dedicated to a beloved Facebook community, its name is subtly inscribed on the label—an elegant tribute that blends cultural heritage with modern design flair.",
     "tools": [
       "Blender",
       "Adobe Photoshop"
     ],
     "role": "3D Artist and Concept Designer",
-    "client": "",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/moroccan-wine-thumb.webp",
+    "slug": "moroccan-wine"
   },
   {
     "title": "Face Yoga MasterMind: Glow & Flow Sessions",
-    "slug": "face-yoga-mastermind-glow-flow-sessions",
     "category": "Design",
     "published": true,
     "image": "/media/face-yoga-mastermind-glow-flow-sessions.webp",
-    "thumbnail": "/media/face-yoga-mastermind-glow-flow-sessions-thumb.webp",
     "description": "A serene promo poster inviting participants to online Zoom face-yoga workshops. With a soft-focus portrait backdrop and dynamic brush-stroke graphics, it highlights a holistic practice designed to tone facial muscles, boost circulation, and promote natural relaxation—all from the comfort of your home.",
     "tools": [
       "Canva",
@@ -86,17 +71,14 @@
     ],
     "role": "Graphic Designer Designer",
     "client": "Face Yoga MasterMind.",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/face-yoga-mastermind-glow-flow-sessions-thumb.webp",
+    "slug": "face-yoga-mastermind-glow-flow-sessions"
   },
   {
     "title": "Face Yoga Wellness Website Design – UI/UX & Development",
-    "slug": "face-yoga-wellness-website-design-ui-ux-development",
     "category": "Web & UI",
     "published": true,
     "image": "/media/face-yoga-wellness-website-design-ui-ux-development.webp",
-    "thumbnail": "/media/face-yoga-wellness-website-design-ui-ux-development-thumb.webp",
     "description": "I designed this clean and calming website interface using Figma with a strong focus on user experience, clarity, and brand alignment for a face yoga and wellness program. The layout highlights intuitive navigation, modern typography, and a serene color palette to reflect the holistic nature of the services.The design was then brought to life using WordPress Elementor, ensuring responsiveness across devices and seamless content editing for the client. Key features include service overviews, appointment booking CTA, and visual storytelling through high-quality imagery—all optimized for user engagement and clarity.",
     "tools": [
       "Figma",
@@ -106,33 +88,27 @@
     "role": "UI/UX Designer & Web Dev",
     "client": "Face Yoga MasterMind",
     "link": "https://annaori.com/",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/face-yoga-wellness-website-design-ui-ux-development-thumb.webp",
+    "slug": "face-yoga-wellness-website-design-ui-ux-development"
   },
   {
     "title": "Black Clover Fanart",
-    "slug": "black-clover-fanart",
     "category": "Illustration",
     "published": true,
     "image": "/media/black-clover-fanart.webp",
-    "thumbnail": "/media/black-clover-fanart-thumb.webp",
     "description": "A digital fan art of Asta from Black Clover, painted in Clip Studio Paint. He stands in a shadowy forest gripping his sword, while the demon’s silhouette looms behind him and his five-leaf grimoire floats before him, bathed in a glowing aura.",
     "tools": [
       "Clip Studio Paint"
     ],
     "role": "Digital Artist",
-    "client": "",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/black-clover-fanart-thumb.webp",
+    "slug": "black-clover-fanart"
   },
   {
     "title": "PTLancer Registration Screen UI",
-    "slug": "ptlancer-registration-screen-ui",
     "category": "Web & UI",
     "published": true,
     "image": "/media/ptlancer-registration-screen-ui.webp",
-    "thumbnail": "/media/ptlancer-registration-screen-ui-thumb.webp",
     "description": "A clean and intuitive registration interface designed in Figma for PTLancer — a platform connecting personal trainers and clients. The design features a modern gym-themed background with a sleek frosted-glass UI element to highlight the choice between registering as a Coach or a Client. Playful yet professional illustrations enhance user engagement, while the minimal layout ensures a smooth onboarding experience.",
     "tools": [
       "Figma",
@@ -140,17 +116,14 @@
     ],
     "role": "UI Designer & Web Dev",
     "client": "PT Lancer",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/ptlancer-registration-screen-ui-thumb.webp",
+    "slug": "ptlancer-registration-screen-ui"
   },
   {
     "title": "Ramadan Story About Customized Educational Jigsaw Puzzle Design",
-    "slug": "ramadan-story-about-customized-educational-jigsaw-puzzle-design",
     "category": "Design",
     "published": true,
     "image": "/media/ramadan-story-about-customized-educational-jigsaw-puzzle-design.webp",
-    "thumbnail": "/media/ramadan-story-about-customized-educational-jigsaw-puzzle-design-thumb.webp",
     "description": "This project showcases my graphic design work for a bilingual (English-Arabic) promotional flyer. I created a visually engaging layout to advertise personalized Ramadan-themed jigsaw puzzles for kids. The design highlights playful illustrations, editable name features, and festive Islamic elements, all tailored to appeal to a young audience and reflect cultural relevance. The layout balances both languages with a clean, modern aesthetic to ensure clarity and appeal across diverse audiences.",
     "tools": [
       "Adobe Photoshop",
@@ -158,85 +131,68 @@
     ],
     "role": "Graphic Designer",
     "client": "BelleBox Gifts",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/ramadan-story-about-customized-educational-jigsaw-puzzle-design-thumb.webp",
+    "slug": "ramadan-story-about-customized-educational-jigsaw-puzzle-design"
   },
   {
     "title": "PS5 Giveaway Landing Page Design",
-    "slug": "ps5-giveaway-landing-page-design",
     "category": "Web & UI",
     "published": true,
     "image": "/media/ps5-giveaway-landing-page-design.webp",
-    "thumbnail": "/media/ps5-giveaway-landing-page-design-thumb.webp",
     "description": "A vibrant and engaging giveaway page designed in Figma to promote a PlayStation 5 giveaway. This layout was created to collect user emails through a visually appealing call-to-action, blending clean typography, dynamic PlayStation-themed visuals, and a user-friendly subscription form. The goal was to boost survey participation and newsletter sign-ups through effective visual hierarchy and gamified design elements.",
     "tools": [
       "Figma"
     ],
     "role": "UX Designer",
     "client": "Personal Project",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/ps5-giveaway-landing-page-design-thumb.webp",
+    "slug": "ps5-giveaway-landing-page-design"
   },
   {
     "title": "Diletta Gomez Digital Painting",
-    "slug": "diletta-gomez-digital-painting",
     "category": "Illustration",
     "published": true,
     "image": "/media/diletta-gomez-digital-painting.webp",
-    "thumbnail": "/media/diletta-gomez-digital-painting-thumb.webp",
     "description": "A digital painting crafted in Clip Studio Paint, featuring model Diletta Gomez Gane. The artwork is based on an original photograph shot by photographer Alessio Albi.",
     "tools": [
       "Clip Studio Paint"
     ],
     "role": "Digital Artist",
-    "client": "",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/diletta-gomez-digital-painting-thumb.webp",
+    "slug": "diletta-gomez-digital-painting"
   },
   {
     "title": "Elegant Wedding Gift Box Mockup",
-    "slug": "elegant-wedding-gift-box-mockup",
     "category": "Design",
     "published": true,
     "image": "/media/elegant-wedding-gift-box-mockup.webp",
-    "thumbnail": "/media/elegant-wedding-gift-box-mockup-thumb.webp",
     "description": "A refined mockup design for a personalized wedding gift box featuring a soft botanical theme with gold accents and watercolor elements. Created to celebrate the union of Asmaa & Adam, the design pairs elegant typography with a heartfelt message, all wrapped in a clean white box and satin ribbon for a luxurious finish. Perfect for showcasing custom packaging design for wedding or event branding.",
     "tools": [
       "Adobe Photoshop"
     ],
     "role": "Graphic Designer",
     "client": "BelleBox Gifts",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/elegant-wedding-gift-box-mockup-thumb.webp",
+    "slug": "elegant-wedding-gift-box-mockup"
   },
   {
     "title": "Final Detroit Smash – Midoriya & Bakugo Fan Art",
-    "slug": "final-detroit-smash-midoriya-bakugo-fan-art",
     "category": "Illustration",
     "published": true,
     "image": "/media/final-detroit-smash-midoriya-bakugo-fan-art.webp",
-    "thumbnail": "/media/final-detroit-smash-midoriya-bakugo-fan-art-thumb.webp",
     "description": "A high-energy digital painting inspired by Boku no Hero Academia, depicting Midoriya and Bakugo unleashing the Final Detroit Smash in perfect sync. This artwork captures the raw intensity, emotion, and explosive power of the duo’s combined attack, symbolizing their growth from rivals to formidable allies. Dynamic lighting, motion effects, and bold composition bring this epic moment to life with dramatic flair.",
     "tools": [
       "Clip Studio Paint"
     ],
     "role": "Digital Artist",
-    "client": "",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/final-detroit-smash-midoriya-bakugo-fan-art-thumb.webp",
+    "slug": "final-detroit-smash-midoriya-bakugo-fan-art"
   },
   {
     "title": "New Product Instagram Story",
-    "slug": "new-product-instagram-story",
     "category": "Design",
     "published": true,
     "image": "/media/new-product-instagram-story.webp",
-    "thumbnail": "/media/new-product-instagram-story-thumb.webp",
     "description": "An Instagram story made to showcase new POD product that just dropped, This Showcases Design, Mockups and Story.",
     "tools": [
       "Canva",
@@ -244,17 +200,14 @@
     ],
     "role": "Graphic Designer",
     "client": "BelleBox Gifts",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/new-product-instagram-story-thumb.webp",
+    "slug": "new-product-instagram-story"
   },
   {
     "title": "Lumen Character Animation",
-    "slug": "lumen-character-animation",
     "category": "Illustration",
     "published": true,
     "image": "/media/lumen-character-animation.webp",
-    "thumbnail": "/media/lumen-character-animation-thumb.webp",
     "description": "Lumen is a solitary being of living light, born from the last spark in a world consumed by shadow. Quiet and curious, Lumen glows with a soft brilliance that pulses with emotion a light that guides, heals, and reveals hidden paths. Though they do not speak, their journey through darkness speaks volumes. Fragile but determined, Lumen searches the remnants of a broken world not just to escape it, but to understand it and perhaps, to rekindle what was lost. as an Artist, I put my feelings into this character design and his story",
     "tools": [
       "Clip Studio Paint",
@@ -262,18 +215,15 @@
       "DALE AI"
     ],
     "role": "Character Design, Animator",
-    "client": "",
-    "link": "",
-    "gallery": [],
-    "video": "/media/lumen-animation.mp4"
+    "video": "/media/lumen-animation.mp4",
+    "thumbnail": "/media/lumen-character-animation-thumb.webp",
+    "slug": "lumen-character-animation"
   },
   {
     "title": "Web Flow Brand Identity Design",
-    "slug": "web-flow-brand-identity-design",
     "category": "Design",
     "published": true,
     "image": "/media/web-flow-brand-identity-design.webp",
-    "thumbnail": "/media/web-flow-brand-identity-design-thumb.webp",
     "description": "This is a quick 5-minute concept design created as part of my application for Project Growth. It reflects a clean, storytelling approach to website creation, balancing aesthetics and usability to showcase creative ideas effectively.",
     "tools": [
       "Canva",
@@ -281,17 +231,14 @@
     ],
     "role": "Graphic Designer",
     "client": "Project Growth",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/web-flow-brand-identity-design-thumb.webp",
+    "slug": "web-flow-brand-identity-design"
   },
   {
     "title": "Rippling Identity Design",
-    "slug": "rippling-identity-design",
     "category": "Design",
     "published": true,
     "image": "/media/rippling-identity-design.webp",
-    "thumbnail": "/media/rippling-identity-design-thumb.webp",
     "description": "This is a quick 5-minute concept design created for Rippling, focusing on a clean and intuitive approach to HR & IT management.",
     "tools": [
       "Canva",
@@ -299,8 +246,21 @@
     ],
     "role": "Graphic Designer",
     "client": "Project Growth",
-    "link": "",
-    "gallery": [],
-    "video": ""
+    "thumbnail": "/media/rippling-identity-design-thumb.webp",
+    "slug": "rippling-identity-design"
+  },
+  {
+    "title": "3D Wagon Learning Project",
+    "category": "3D",
+    "published": true,
+    "image": "/media/wagon.jpeg",
+    "description": "3D wagon modeled from scratch, all assets also modeled and textured from scratch.\n",
+    "role": "3D Artist",
+    "client": "Personal",
+    "gallery": [
+      "/media/wagon.jpeg"
+    ],
+    "video": "/media/wagon-vid.mp4",
+    "thumbnail": "/media/wagon.jpeg"
   }
 ]

@@ -1,0 +1,7 @@
+# Local development and preview state
+node_modules/
+.env
+.env.*
+.openai/hosting.json
+preview/
+__pycache__/

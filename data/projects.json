@@ -257,9 +257,6 @@
     "description": "3D wagon modeled from scratch, all assets also modeled and textured from scratch.\n",
     "role": "3D Artist",
     "client": "Personal",
-    "gallery": [
-      "/media/wagon.jpeg"
-    ],
     "video": "/media/wagon-vid.mp4",
     "thumbnail": "/media/wagon.jpeg"
   }

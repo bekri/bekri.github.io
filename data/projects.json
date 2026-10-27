@@ -258,5 +258,18 @@
     "role": "3D Artist",
     "client": "Personal",
     "video": "/media/wagon-vid.mp4"
+  },
+  {
+    "title": "Patrick From sponge Bob",
+    "category": "3D",
+    "published": true,
+    "image": "/media/render.png",
+    "description": "Just doing fun projects to prevent my skills from getting rusty.",
+    "tools": [
+      "Blender"
+    ],
+    "role": "3D modeler",
+    "client": "Personal",
+    "slug": "patrick"
   }
 ]

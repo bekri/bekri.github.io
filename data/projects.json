@@ -271,5 +271,46 @@
     "role": "3D modeler",
     "client": "Personal",
     "slug": "patrick"
+  },
+  {
+    "title": "Cat Ornament",
+    "category": "Design",
+    "published": true,
+    "image": "/media/cat-ornament.jpeg",
+    "description": "Custom Print, Designed during my time at Belle box Gifts",
+    "role": "Designer & Print Operator",
+    "client": "Client"
+  },
+  {
+    "title": "Custom Metro Card",
+    "category": "Design",
+    "published": true,
+    "image": "/media/custom-metro-card2.jpeg",
+    "description": "Custom Metro cards made for a client, During my time at Belle Box Gifts.",
+    "tools": [
+      "Photoshop",
+      "PrintEXP"
+    ],
+    "role": "Graphic Designer & Print Operator",
+    "client": "Client",
+    "gallery": [
+      "/media/custom-metro-card.jpeg"
+    ]
+  },
+  {
+    "title": "Custom Xmas products",
+    "category": "Design",
+    "published": true,
+    "image": "/media/custom-mugs.jpeg",
+    "description": "Custom Christmas products, I designed and printed during my time at  Belle Box Gifts.",
+    "tools": [
+      "Photoshop",
+      "Print Exp"
+    ],
+    "role": "Graphic Designer & Print Operator",
+    "client": "Client",
+    "gallery": [
+      "/media/custom-whiskey-cup.jpeg"
+    ]
   }
 ]

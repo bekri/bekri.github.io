@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stand NARSA, IRF World Congress | Zakariae Bekri</title>
+<meta name="description" content="Conception 3D du stand de la NARSA pour l'IRF World Congress à Istanbul, présentée comme une projection interactive.">
+<meta property="og:image" content="../media/narsa/22_cinematique-1920.webp">
+<link rel="preload" href="../media/manrope-latin.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="narsa.css">
+</head>
+<body>
+<a class="skip" href="#s1"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
+
+<header class="hud">
+  <a class="hud-back" href="../#work">Portfolio</a>
+  <p class="hud-title">NARSA &ndash; IRF World Congress</p>
+  <div class="hud-tools">
+    <button class="hud-btn" id="langBtn" type="button" aria-label="Switch language">EN</button>
+    <button class="hud-btn" id="motionBtn" type="button" aria-pressed="false"><span lang="fr">Pause</span><span lang="en">Pause</span></button>
+  </div>
+  <div class="hud-bar"><i id="bar"></i></div>
+</header>
+<div class="room" aria-hidden="true"><div class="beam"></div></div>
+
+<main>
+
+<section class="slide s-title" id="s1" data-len="2" data-name="Ouverture|Opening">
+  <div class="stage">
+    <figure class="screen title-screen">
+      <img src="../media/narsa/22_cinematique-1920.webp" srcset="../media/narsa/22_cinematique-960.webp 960w, ../media/narsa/22_cinematique-1920.webp 1920w" sizes="100vw" alt="Vue cinématique du stand NARSA">
+    </figure>
+    <div class="title-copy">
+      <p class="kicker"><span lang="fr">Projet freelance, conception 3D</span><span lang="en">Freelance project, 3D design</span></p>
+      <h1>
+        <span class="ln"><span>Stand NARSA</span></span>
+        <span class="ln"><em>IRF World Congress</em></span>
+        <span class="ln"><span>Istanbul</span></span>
+      </h1>
+      <p class="lede">
+        <span lang="fr">Le stand de l&rsquo;Agence Nationale de la Sécurité Routière du Maroc, modélisé, habillé et rendu dans Blender à partir du cahier des charges.</span>
+        <span lang="en">The stand for Morocco&rsquo;s National Road Safety Agency, modelled, dressed and rendered in Blender from the client brief.</span>
+      </p>
+      <p class="hint"><span lang="fr">Faites défiler ou utilisez les flèches</span><span lang="en">Scroll or use the arrow keys</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-plan" id="s2" data-len="2.6" data-name="Le brief|The brief">
+  <div class="stage">
+    <div class="split">
+      <div class="copy from-left">
+        <h2><span lang="fr">Du brief au plan</span><span lang="en">From brief to floor plan</span></h2>
+        <p><span lang="fr">Le brief listait chaque zone : accueil, mur institutionnel, écran LED, salon marocain, espace thé, réserve et enseigne suspendue. Le plan est la première chose que le client valide.</span>
+        <span lang="en">The brief listed every zone: reception, institutional wall, LED screen, Moroccan lounge, tea corner, storage and hanging sign. The floor plan is the first thing the client signs off.</span></p>
+        <ul class="ticks">
+          <li><span lang="fr">Accueil avec borne tactile</span><span lang="en">Reception with touch kiosk</span></li>
+          <li><span lang="fr">Écran LED et sonorisation</span><span lang="en">LED screen and sound</span></li>
+          <li><span lang="fr">Salon et espace thé marocains</span><span lang="en">Moroccan lounge and tea corner</span></li>
+          <li><span lang="fr">Réserve fermée</span><span lang="en">Lockable storage</span></li>
+        </ul>
+      </div>
+      <figure class="screen flip">
+        <img loading="lazy" src="../media/narsa/20_plan-1920.webp" srcset="../media/narsa/20_plan-960.webp 960w, ../media/narsa/20_plan-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Plan du stand vu de dessus">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-trio" id="s3" data-len="2.4" data-name="Accueil|Reception">
+  <div class="stage">
+    <h2 class="slide-h"><span lang="fr">L&rsquo;accueil</span><span lang="en">Reception</span></h2>
+    <div class="trio">
+      <figure class="card from-left">
+        <img loading="lazy" src="../media/narsa/01_accueil_desk-960.webp" alt="Comptoir d'accueil NARSA">
+        <figcaption><span lang="fr">Comptoir rétroéclairé aux couleurs de la NARSA</span><span lang="en">Backlit counter in NARSA colours</span></figcaption>
+      </figure>
+      <figure class="card from-bottom">
+        <img loading="lazy" src="../media/narsa/02_accueil_borne_tactile-960.webp" alt="Borne tactile">
+        <figcaption><span lang="fr">Borne tactile avec interface dessinée pour le stand</span><span lang="en">Touch kiosk with an interface drawn for the stand</span></figcaption>
+      </figure>
+      <figure class="card from-right">
+        <img loading="lazy" src="../media/narsa/03_desk_serrure-960.webp" alt="Serrure du comptoir">
+        <figcaption><span lang="fr">Rangement verrouillable sous le comptoir</span><span lang="en">Lockable storage under the counter</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-led" id="s4" data-len="2.4" data-name="Écran LED|LED wall">
+  <div class="stage">
+    <div class="split rev">
+      <figure class="screen flip-side">
+        <img loading="lazy" src="../media/narsa/06_ecran_led_son-1920.webp" srcset="../media/narsa/06_ecran_led_son-960.webp 960w, ../media/narsa/06_ecran_led_son-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Écran LED et enceintes du stand">
+      </figure>
+      <div class="copy from-right">
+        <h2><span lang="fr">Un écran qui raconte</span><span lang="en">A screen that tells the story</span></h2>
+        <p><span lang="fr">La boucle vidéo a été storyboardée puis produite pour l&rsquo;écran LED, et projetée sur la surface dans la scène pour juger l&rsquo;éclairage réel du stand.</span>
+        <span lang="en">The video loop was storyboarded, produced for the LED wall, then mapped onto the screen inside the scene to judge how it actually lights the stand.</span></p>
+        <figure class="mini">
+          <video class="led" muted loop playsinline preload="none" poster="../media/narsa/art-storyboard.webp">
+            <source src="../media/narsa/led-loop.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-duo" id="s5" data-len="2.2" data-name="Mur officiel|Official wall">
+  <div class="stage">
+    <h2 class="slide-h"><span lang="fr">Le mur institutionnel</span><span lang="en">The institutional wall</span></h2>
+    <p class="slide-p"><span lang="fr">Drapeau, portrait officiel et écran placés pour qu&rsquo;aucun élément n&rsquo;en masque un autre, quel que soit l&rsquo;angle du visiteur.</span>
+    <span lang="en">Flag, official portrait and screen placed so that nothing hides anything else, from any visitor angle.</span></p>
+    <div class="duo">
+      <figure class="card from-left"><img loading="lazy" src="../media/narsa/05_drapeau-960.webp" alt="Drapeau du Maroc sur le stand"></figure>
+      <figure class="card from-right"><img loading="lazy" src="../media/narsa/04_portrait_officiel-960.webp" alt="Mur institutionnel avec portrait officiel"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-wide" id="s5b" data-len="2.4" data-name="Salon|Lounge">
+  <div class="stage">
+    <div class="split rev">
+      <figure class="screen flip">
+        <img loading="lazy" src="../media/narsa/07_salon-1920.webp" srcset="../media/narsa/07_salon-960.webp 960w, ../media/narsa/07_salon-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Salon marocain du stand">
+      </figure>
+      <div class="copy from-right">
+        <h2><span lang="fr">Un salon pour recevoir</span><span lang="en">A lounge to receive guests</span></h2>
+        <p><span lang="fr">Banquettes, coussins, tapis et table basse : un vrai salon marocain au cœur du stand, pour accueillir les délégations autour d&rsquo;un thé.</span>
+        <span lang="en">Benches, cushions, rug and low table: a real Moroccan salon at the heart of the stand, to welcome delegations over tea.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-mat" id="s6" data-len="3.2" data-name="Salon marocain|Moroccan lounge">
+  <div class="stage">
+    <h2 class="slide-h"><span lang="fr">Le salon marocain, matière par matière</span><span lang="en">The Moroccan lounge, material by material</span></h2>
+    <div class="matwrap">
+      <figure class="screen matshot">
+        <img loading="lazy" src="../media/narsa/14_espace_the-1920.webp" srcset="../media/narsa/14_espace_the-960.webp 960w, ../media/narsa/14_espace_the-1920.webp 1920w" sizes="70vw" alt="Espace thé et salon marocain">
+        <span class="pin" data-for="m-damask" style="--x:61%;--y:46%"></span>
+        <span class="pin" data-for="m-berber" style="--x:53%;--y:86%"></span>
+        <span class="pin" data-for="m-rug" style="--x:43%;--y:71%"></span>
+        <span class="pin" data-for="m-zellige" style="--x:70%;--y:31%"></span>
+      </figure>
+      <ol class="swatches">
+        <li id="m-damask" style="--i:0"><img loading="lazy" src="../media/narsa/tex-damask.webp" alt=""><div><b><span lang="fr">Damas rouge</span><span lang="en">Red damask</span></b><span lang="fr">Le velours brodé des banquettes de salon traditionnelles.</span><span lang="en">The embroidered velvet of traditional salon benches.</span></div></li>
+        <li id="m-berber" style="--i:1"><img loading="lazy" src="../media/narsa/tex-berber.webp" alt=""><div><b><span lang="fr">Rayures berbères</span><span lang="en">Berber stripes</span></b><span lang="fr">Les coussins tissés apportent le rythme et la couleur du sud.</span><span lang="en">Woven cushions bring southern rhythm and colour.</span></div></li>
+        <li id="m-rug" style="--i:2"><img loading="lazy" src="../media/narsa/tex-rug.webp" alt=""><div><b><span lang="fr">Tapis marocain</span><span lang="en">Moroccan rug</span></b><span lang="fr">Il délimite le salon sans cloison et adoucit le sol du hall.</span><span lang="en">It defines the lounge without a wall and softens the hall floor.</span></div></li>
+        <li id="m-zellige" style="--i:3;order:-1"><img loading="lazy" src="../media/narsa/tex-zellige.webp" alt=""><div><b>Zellige</b><span lang="fr">Le bandeau émaillé au-dessus des banquettes, signature de l&rsquo;artisanat de Fès.</span><span lang="en">The glazed band above the benches, a signature of Fez craft.</span></div></li>
+      </ol>
+      <svg class="leaders" aria-hidden="true"></svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-mat s-tea" id="s7" data-len="3" data-name="Cérémonie du thé|Tea ceremony">
+  <div class="stage">
+    <h2 class="slide-h"><span lang="fr">La cérémonie du thé</span><span lang="en">The tea ceremony</span></h2>
+    <div class="matwrap">
+      <figure class="screen matshot">
+        <img loading="lazy" src="../media/narsa/16_berrad-1920.webp" srcset="../media/narsa/16_berrad-960.webp 960w, ../media/narsa/16_berrad-1920.webp 1920w" sizes="70vw" alt="Théière marocaine (berrad) en argent">
+        <span class="pin" data-for="m-silver" style="--x:49%;--y:62%"></span>
+        <span class="pin" data-for="m-glass" style="--x:79%;--y:62%"></span>
+      </figure>
+      <ol class="swatches">
+        <li id="m-silver" style="--i:0"><img loading="lazy" src="../media/narsa/tex-silver.webp" alt=""><div><b><span lang="fr">Argent ciselé</span><span lang="en">Engraved silver</span></b><span lang="fr">Le berrad a été modélisé d&rsquo;après références : argent poli, gravure seulement sur la panse et le couvercle.</span><span lang="en">The berrad was modelled from references: polished silver, engraving only on the belly and lid.</span></div></li>
+        <li id="m-glass" style="--i:1"><img loading="lazy" src="../media/narsa/13_table_the-960.webp" alt=""><div><b><span lang="fr">Verres gravés</span><span lang="en">Etched glasses</span></b><span lang="fr">Verre à l&rsquo;indice réel (1,52), bande gravée et filet doré, comme les verres à thé servis au Maroc.</span><span lang="en">Glass at its real index (1.52), an etched band and gold rim, like the tea glasses served in Morocco.</span></div></li>
+      </ol>
+      <svg class="leaders" aria-hidden="true"></svg>
+    </div>
+    <div class="strip">
+      <figure class="card from-left"><img loading="lazy" src="../media/narsa/13_table_the-960.webp" alt="Table à thé avec verres gravés"></figure>
+      <figure class="card from-bottom"><img loading="lazy" src="../media/narsa/12_gateaux_beldi-960.webp" alt="Gâteaux marocains"></figure>
+      <figure class="card from-right"><img loading="lazy" src="../media/narsa/11_cafe_eau-960.webp" alt="Machine à café et bouteilles d'eau"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-plan" id="s8" data-len="2.4" data-name="Visuels|Graphics">
+  <div class="stage">
+    <div class="split">
+      <div class="copy from-left">
+        <h2><span lang="fr">La carte du Maroc en relief</span><span lang="en">The relief map of Morocco</span></h2>
+        <p><span lang="fr">Une carte rétroéclairée posée sur un relief modélisé, pour donner du volume au territoire couvert par l&rsquo;agence.</span>
+        <span lang="en">A backlit map laid over a modelled relief, giving volume to the territory the agency covers.</span></p>
+        <div class="thumbs one"><img loading="lazy" src="../media/narsa/art-map.webp" alt="Carte du Maroc rétroéclairée"></div>
+      </div>
+      <figure class="screen flip">
+        <img loading="lazy" src="../media/narsa/09_carte_relief-1920.webp" srcset="../media/narsa/09_carte_relief-960.webp 960w, ../media/narsa/09_carte_relief-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Carte du Maroc en relief">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-plan" id="s8b" data-len="2.4" data-name="Visuels|Graphics">
+  <div class="stage">
+    <div class="split rev">
+      <figure class="screen flip-side">
+        <img loading="lazy" src="../media/narsa/08_visuels_retroeclaires-1920.webp" srcset="../media/narsa/08_visuels_retroeclaires-960.webp 960w, ../media/narsa/08_visuels_retroeclaires-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Visuels rétroéclairés sur le stand">
+      </figure>
+      <div class="copy from-right">
+        <h2><span lang="fr">Visuels rétroéclairés</span><span lang="en">Backlit graphics</span></h2>
+        <p><span lang="fr">Chaque visuel imprimé du stand a été créé à la taille réelle, puis éclairé par l&rsquo;arrière dans la scène, comme une caisse lumineuse.</span>
+        <span lang="en">Every printed graphic on the stand was made at real size, then lit from behind in the scene like a lightbox.</span></p>
+        <div class="thumbs two">
+          <img loading="lazy" src="../media/narsa/art-visual-a.webp" alt="Visuel A">
+          <img loading="lazy" src="../media/narsa/art-visual-b.webp" alt="Visuel B">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-lab" id="s9" data-len="2.6" data-name="Atelier|Workshop">
+  <div class="stage">
+    <h2 class="slide-h"><span lang="fr">L&rsquo;atelier : textures, matériaux, objets</span><span lang="en">The workshop: textures, materials, objects</span></h2>
+    <p class="slide-p"><span lang="fr">Tout a reçu un matériau physique : verre, PET et eau avec leurs vrais indices de réfraction, bois, métaux et tissus en PBR.</span>
+    <span lang="en">Everything got a physically based material: glass, PET and water with their real refractive indices, plus PBR woods, metals and fabrics.</span></p>
+    <div class="lab">
+      <figure style="--i:0"><img loading="lazy" src="../media/narsa/tex-wood.webp" alt=""><figcaption><span lang="fr">Bois sombre</span><span lang="en">Dark wood</span></figcaption></figure>
+      <figure style="--i:1"><img loading="lazy" src="../media/narsa/tex-velvet.webp" alt=""><figcaption><span lang="fr">Velours</span><span lang="en">Velvet</span></figcaption></figure>
+      <figure style="--i:2"><img loading="lazy" src="../media/narsa/tex-damask.webp" alt=""><figcaption><span lang="fr">Damas</span><span lang="en">Damask</span></figcaption></figure>
+      <figure style="--i:3"><img loading="lazy" src="../media/narsa/tex-zellige.webp" alt=""><figcaption>Zellige</figcaption></figure>
+      <figure style="--i:4"><img loading="lazy" src="../media/narsa/art-kiosk.webp" alt=""><figcaption><span lang="fr">Interface borne</span><span lang="en">Kiosk UI</span></figcaption></figure>
+      <figure style="--i:5"><img loading="lazy" src="../media/narsa/art-label.webp" alt=""><figcaption><span lang="fr">Étiquette d&rsquo;eau</span><span lang="en">Water label</span></figcaption></figure>
+      <figure style="--i:6"><img loading="lazy" src="../media/narsa/art-storyboard.webp" alt=""><figcaption><span lang="fr">Storyboard LED</span><span lang="en">LED storyboard</span></figcaption></figure>
+      <figure style="--i:7"><img loading="lazy" src="../media/narsa/10_reserve-960.webp" alt=""><figcaption><span lang="fr">Réserve</span><span lang="en">Storage</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-final" id="s10" data-len="2.6" data-name="Vues finales|Final views">
+  <div class="stage">
+    <figure class="screen zoom">
+      <img loading="lazy" src="../media/narsa/23_vue_aerienne-1920.webp" srcset="../media/narsa/23_vue_aerienne-960.webp 960w, ../media/narsa/23_vue_aerienne-1920.webp 1920w" sizes="100vw" alt="Vue aérienne du stand">
+    </figure>
+    <div class="final-copy">
+      <h2><span lang="fr">Prêt à être construit</span><span lang="en">Ready to be built</span></h2>
+      <div class="duo small">
+        <figure class="card from-left"><img loading="lazy" src="../media/narsa/21_vue_face-960.webp" alt="Vue de face"></figure>
+        <figure class="card from-right"><img loading="lazy" src="../media/narsa/15_enseigne-960.webp" alt="Enseigne suspendue"></figure>
+      </div>
+      <p class="tools">Blender 5, Cycles, OptiX &nbsp;|&nbsp; <span lang="fr">Modélisation, matériaux, éclairage, rendu</span><span lang="en">Modelling, materials, lighting, rendering</span></p>
+      <div class="ctas">
+        <a class="cta" href="../#contact"><span lang="fr">Discuter d&rsquo;un projet</span><span lang="en">Discuss a project</span></a>
+        <button class="cta ghost" type="button" id="catOpen"><span lang="fr">Voir le catalogue</span><span lang="en">View the catalogue</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog class="cat" id="cat" aria-labelledby="catTitle">
+  <div class="cat-head">
+    <h2 id="catTitle"><span lang="fr">Catalogue des rendus</span><span lang="en">Render catalogue</span></h2>
+    <button class="hud-btn" type="button" data-close><span lang="fr">Fermer</span><span lang="en">Close</span></button>
+  </div>
+  <ul class="cat-grid" id="catGrid"></ul>
+  <div class="viewer" id="viewer" hidden>
+    <figure>
+      <img id="vImg" alt="">
+      <figcaption><span id="vCap"></span><span class="v-count" id="vCount"></span></figcaption>
+    </figure>
+    <button class="v-nav prev" type="button" id="vPrev" aria-label="Previous">&#8592;</button>
+    <button class="v-nav next" type="button" id="vNext" aria-label="Next">&#8594;</button>
+    <button class="hud-btn v-back" type="button" id="vBack"><span lang="fr">Toutes les images</span><span lang="en">All images</span></button>
+  </div>
+</dialog>
+<script src="narsa.js"></script>
+</body>
+</html>

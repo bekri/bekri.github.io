@@ -1,5 +1,25 @@
 [
   {
+    "title": "NARSA Stand, IRF World Congress Istanbul",
+    "category": "3D",
+    "published": true,
+    "image": "/media/narsa/22_cinematique-1920.webp",
+    "description": "Exhibition stand for Morocco's National Road Safety Agency (NARSA) at the IRF World Congress in Istanbul, built in Blender from the client brief: reception with touch kiosk, LED wall with a storyboarded loop, institutional wall, Moroccan lounge and tea corner, storage and hanging sign. Every surface got a physically based material.",
+    "tools": [
+      "Blender"
+    ],
+    "role": "3D design, materials, lighting and rendering",
+    "client": "Freelance",
+    "thumbnail": "/media/narsa/22_cinematique-960.webp",
+    "slug": "narsa-stand",
+    "link": "https://bekri.github.io/narsa-stand/",
+    "gallery": [
+      "/media/narsa/14_espace_the-1920.webp",
+      "/media/narsa/16_berrad-1920.webp",
+      "/media/narsa/23_vue_aerienne-1920.webp"
+    ]
+  },
+  {
     "title": "Embers & Frost Lounge",
     "category": "3D",
     "published": true,

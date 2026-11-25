@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prism Swarm, a neon arcade game | Zakariae Bekri</title>
+<meta name="description" content="Prism Swarm: a fast neon arcade game where you match colors to survive a glowing swarm. Made in Godot 4 by Zakariae Bekri. Play free in your browser.">
+<meta name="theme-color" content="#111512">
+<meta property="og:title" content="Prism Swarm | Zakariae Bekri">
+<meta property="og:description" content="Match your color. Pop the swarm. Don't panic. Play free in your browser.">
+<meta property="og:image" content="https://bekri.github.io/media/prism-swarm/key-art-1920.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../media/manrope-latin.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="prism.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="/favicon.ico" />
+</head>
+<body>
+<a class="skip" href="#s1">Skip to content</a>
+
+<canvas class="swarm" id="swarm" aria-hidden="true"></canvas>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="hud">
+  <a class="hud-back" href="../#work">Portfolio</a>
+  <p class="hud-title"><span class="lv" id="lv">LV 1</span> <span id="lvName">Press start</span></p>
+  <div class="hud-tools">
+    <div class="swap" role="group" aria-label="Pick your color">
+      <button class="dot r" type="button" data-c="0" aria-pressed="true" aria-label="Red"></button>
+      <button class="dot g" type="button" data-c="1" aria-pressed="false" aria-label="Green"></button>
+      <button class="dot b" type="button" data-c="2" aria-pressed="false" aria-label="Blue"></button>
+    </div>
+    <button class="hud-btn snd" id="soundBtn" type="button" aria-pressed="false"><span class="snd-ic" aria-hidden="true"></span><span id="soundLbl">Sound off</span></button>
+    <button class="hud-btn" id="motionBtn" type="button" aria-pressed="false">Pause</button>
+  </div>
+  <div class="hud-bar" aria-hidden="true"><i id="bar"></i></div>
+</header>
+
+<main>
+
+<section class="slide s-title" id="s1" data-len="2" data-name="Press start">
+  <div class="stage">
+    <figure class="title-screen">
+      <img src="../media/prism-swarm/home-bg-1920.webp" srcset="../media/prism-swarm/home-bg-960.webp 960w, ../media/prism-swarm/home-bg-1920.webp 1920w" sizes="100vw" alt="">
+    </figure>
+    <div class="title-copy">
+      <p class="kicker">Game dev &middot; My own game &middot; OpenGame Jam #1</p>
+      <h1 class="glitch-in">
+        <img class="logo" src="../media/prism-swarm/logo.webp" width="956" height="521" alt="Prism Swarm">
+      </h1>
+      <p class="lede">A fast neon arcade game. A swarm of glowing shapes comes at you in <b class="t-r">red</b>, <b class="t-g">green</b> and <b class="t-b">blue</b>. Match their color to fight back, and survive as long as you can.</p>
+      <div class="ctas">
+        <a class="cta play" href="https://opengame.io/g/v3cvp42xce" target="_blank" rel="noopener noreferrer">&#9654;&nbsp; Play free in your browser</a>
+        <span class="hint">Scroll to explore. Turn the sound on for game music. Tap the colored dots up top to change your color, then click the shapes to pop the ones that match.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-rule" id="s2" data-len="2.6" data-name="The one rule">
+  <div class="stage">
+    <div class="split">
+      <div class="copy from-left">
+        <p class="tag">How it plays</p>
+        <h2 class="gl" data-text="One simple rule.">One simple <em>rule.</em></h2>
+        <p>You are a little prism of light, and you can switch your color any time. Everything else follows from that.</p>
+        <ul class="rules">
+          <li style="--i:0"><span class="shape tri" aria-hidden="true"></span><div><b>Your shots hit your color</b>Be red to hurt red monsters. Switch to hit the others.</div></li>
+          <li style="--i:1"><span class="shape sq" aria-hidden="true"></span><div><b>Your color can't hurt you</b>Monsters of your color pass right through you. Swap to slip out of a trap.</div></li>
+          <li style="--i:2"><span class="shape ci" aria-hidden="true"></span><div><b>Catch your color to heal</b>Bullets that match you give health back instead of taking it.</div></li>
+        </ul>
+      </div>
+      <figure class="screen flip tall">
+        <img loading="lazy" src="../media/prism-swarm/countdown-1920.webp" srcset="../media/prism-swarm/countdown-960.webp 960w, ../media/prism-swarm/countdown-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Prism Swarm gameplay: the player surrounded by red, green and blue monsters">
+        <figcaption class="chip">Red, green and blue monsters. <b>Only your color takes damage.</b></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-mat" id="s2b" data-len="3.2" data-name="Read the screen">
+  <div class="stage">
+    <p class="tag">Read the screen</p>
+    <h2 class="slide-h gl" data-text="Everything you need, at a glance.">Everything you need, <em>at a glance.</em></h2>
+    <div class="matwrap">
+      <figure class="screen matshot">
+        <img loading="lazy" src="../media/prism-swarm/spectrum-burst-1920.webp" srcset="../media/prism-swarm/spectrum-burst-960.webp 960w, ../media/prism-swarm/spectrum-burst-1920.webp 1920w" sizes="70vw" alt="A run in progress on a phone, with a Spectrum Burst ring around the player">
+        <span class="pin" data-for="h-you" style="--x:50%;--y:50%"></span>
+        <span class="pin" data-for="h-combo" style="--x:50%;--y:10%"></span>
+        <span class="pin" data-for="h-danger" style="--x:10%;--y:25%"></span>
+        <span class="pin" data-for="h-swap" style="--x:50%;--y:93%"></span>
+        <span class="pin" data-for="h-dash" style="--x:92%;--y:82%"></span>
+      </figure>
+      <ol class="callouts">
+        <li id="h-you"><span class="shape tri" aria-hidden="true"></span><div><b>You</b>The glowing prism in the middle. Your shots fly out on their own.</div></li>
+        <li id="h-combo"><span class="shape ci" aria-hidden="true"></span><div><b>Combo and Spectrum Burst</b>Defeat all three colors in 3 seconds and a white wave clears the screen.</div></li>
+        <li id="h-danger"><span class="shape sq" aria-hidden="true"></span><div><b>Danger meter</b>Goes from &ldquo;Vibing&rdquo; to total panic as the swarm grows.</div></li>
+        <li id="h-swap"><span class="shape tri" aria-hidden="true"></span><div><b>Your color</b>Tap 1, 2 or 3 to become red, green or blue.</div></li>
+        <li id="h-dash"><span class="shape sq" aria-hidden="true"></span><div><b>Dash</b>A quick burst of speed to escape a tight spot.</div></li>
+      </ol>
+      <svg class="leaders" aria-hidden="true"></svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-cards" id="s3" data-len="2.6" data-name="Level up">
+  <div class="stage">
+    <p class="tag">Level up</p>
+    <h2 class="slide-h gl" data-text="Grab gems. Pick a power.">Grab gems. <em>Pick a power.</em></h2>
+    <p class="slide-p">Every level gives you three cards to choose from. The powers have silly names on purpose, because a good laugh makes a hard run more fun.</p>
+    <div class="deal">
+      <article class="pcard" style="--i:0;--c:var(--r)"><span class="rar">Common</span><h3>Zoomies</h3><p>Move faster. Gotta go fast-ish.</p></article>
+      <article class="pcard" style="--i:1;--c:var(--g)"><span class="rar">Common</span><h3>Balls of Steel</h3><p>Glowing balls circle you and hit every color.</p></article>
+      <article class="pcard" style="--i:2;--c:var(--bl)"><span class="rar">Rare</span><h3>Emotional Damage</h3><p>More damage. They'll need therapy.</p></article>
+      <article class="pcard epic" style="--i:3;--c:#fff"><span class="rar">Evolution</span><h3>White Prism</h3><p>Mix the right powers and every shot hits every color.</p></article>
+    </div>
+    <figure class="screen wide from-bottom">
+      <img loading="lazy" src="../media/prism-swarm/level-up-1920.webp" srcset="../media/prism-swarm/level-up-960.webp 960w, ../media/prism-swarm/level-up-1920.webp 1920w" sizes="(min-width: 900px) 70vw, 100vw" alt="The level up screen with three power cards">
+    </figure>
+  </div>
+</section>
+
+<section class="slide s-boss" id="s4" data-len="3" data-name="Boss incoming">
+  <div class="stage">
+    <div class="split rev">
+      <figure class="screen flip-side">
+        <video class="clip" muted loop playsinline preload="none" poster="../media/prism-swarm/hydra-1920.webp" aria-label="A clip of the Hydra boss fight">
+          <source src="../media/prism-swarm/ascended-hydra.mp4" type="video/mp4">
+        </video>
+        <figcaption class="chip warn">BOSS INCOMING</figcaption>
+      </figure>
+      <div class="copy from-right">
+        <p class="tag">Every 5 minutes</p>
+        <h2 class="gl" data-text="Big, flashy bosses.">Big, flashy <em>bosses.</em></h2>
+        <p>A countdown warns you, then a boss arrives: Mortar Star, The Lighthouse, The Hydra, The Splitter or The Eclipse. Their attacks are bright and loud, but you can always see them coming and dodge.</p>
+        <p>The fifth boss is a powered up surprise called the <b class="t-a">Final Exam</b>.</p>
+        <div class="thumbs">
+          <img loading="lazy" src="../media/prism-swarm/laser-960.webp" alt="A boss firing a giant laser">
+          <img loading="lazy" src="../media/prism-swarm/lighthouse-960.webp" alt="The Lighthouse boss sweeping a beam of light">
+          <img loading="lazy" src="../media/prism-swarm/phase-two-960.webp" alt="A boss in phase two, surrounded by a ring of bullets">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-exam" id="s5" data-len="2.2" data-name="Final exam">
+  <div class="stage">
+    <figure class="screen zoom">
+      <img loading="lazy" src="../media/prism-swarm/final-exam-1920.webp" srcset="../media/prism-swarm/final-exam-960.webp 960w, ../media/prism-swarm/final-exam-1920.webp 1920w" sizes="100vw" alt="The Final Exam boss filling the screen with red and green light">
+    </figure>
+    <div class="exam-copy">
+      <p class="tag">Heavy juice</p>
+      <h2 class="gl" data-text="Light, sound and shake.">Light, sound <em>and shake.</em></h2>
+      <p>Glow, screen shake, combo counters, pop sounds and a hype announcer. Every hit is meant to feel good.</p>
+      <p class="combo" aria-hidden="true">x<span id="combo">0</span> <small>COMBO</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-modes" id="s6" data-len="2.6" data-name="Pick your run">
+  <div class="stage">
+    <p class="tag">Ways to play</p>
+    <h2 class="slide-h gl" data-text="Pick your run.">Pick your <em>run.</em></h2>
+    <div class="modes">
+      <article class="mode from-left"><h3>Classic</h3><p>Beat 5 bosses to win.</p></article>
+      <article class="mode from-bottom"><h3>Endless</h3><p>No finish line. How long can you last?</p></article>
+      <article class="mode from-right"><h3>Today's Challenge</h3><p>Everyone in the world gets the same run each day.</p></article>
+    </div>
+    <div class="trio">
+      <figure class="card from-left"><img loading="lazy" src="../media/prism-swarm/menu-960.webp" alt="Main menu with modes, difficulty and guns"><figcaption>Mix modes, difficulty and guns</figcaption></figure>
+      <figure class="card from-bottom"><img loading="lazy" src="../media/prism-swarm/shop-960.webp" alt="The Prism Shop"><figcaption>Spend prisms in the shop between runs</figcaption></figure>
+      <figure class="card from-right"><img loading="lazy" src="../media/prism-swarm/duo-960.webp" alt="Two players together in the arena"><figcaption>Team up with a friend online</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-made" id="s7" data-len="2.4" data-name="Made with code">
+  <div class="stage">
+    <div class="split">
+      <div class="copy from-left">
+        <p class="tag">Behind the game</p>
+        <h2 class="gl" data-text="Made almost only with code.">Made almost only <em>with code.</em></h2>
+        <p>The shapes, glow and effects are all drawn by code in Godot 4. The sound effects and music are generated by a small program too, not recorded. The only hand-made pictures are the logo and the menu background.</p>
+        <ul class="ticks">
+          <li>One idea that grows everything: three colors</li>
+          <li>Plays on PC, in the browser and on phones</li>
+          <li>Worldwide high scores for each mode</li>
+        </ul>
+      </div>
+      <figure class="screen flip">
+        <img loading="lazy" src="../media/prism-swarm/powers-1920.webp" srcset="../media/prism-swarm/powers-960.webp 960w, ../media/prism-swarm/powers-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 100vw" alt="Pause screen showing all the powers collected in a run as cards">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-final" id="s8" data-len="2" data-name="Continue?">
+  <div class="stage">
+    <figure class="screen zoom">
+      <img loading="lazy" src="../media/prism-swarm/key-art-1920.webp" srcset="../media/prism-swarm/key-art-960.webp 960w, ../media/prism-swarm/key-art-1920.webp 1920w" sizes="100vw" alt="Prism Swarm title screen">
+    </figure>
+    <div class="final-copy">
+      <p class="tag blink">Insert coin</p>
+      <h2 class="gl" data-text="Your turn.">Your <em>turn.</em></h2>
+      <p>Prism Swarm is entered in the OpenGame Game Jam #1. Play it free in your browser, no download and no account needed. A keyboard works best.</p>
+      <p class="tools">Godot 4 &nbsp;|&nbsp; Solo project</p>
+      <div class="ctas">
+        <a class="cta play" href="https://opengame.io/g/v3cvp42xce" target="_blank" rel="noopener noreferrer">&#9654;&nbsp; Play Prism Swarm</a>
+        <a class="cta ghost" href="../#contact">Say hello</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="prism.js"></script>
+</body>
+</html>

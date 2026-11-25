@@ -25,7 +25,7 @@ def asset(value):
 
 for project in projects:
     assert project.get("title", "").strip(), "Project title is required"
-    assert project.get("category") in ["3D", "Design", "Illustration", "Web & UI"], f"Unknown category: {project}"
+    assert project.get("category") in ["3D", "Design", "Illustration", "Web & UI", "Game dev"], f"Unknown category: {project}"
     assert isinstance(project.get("published", True), bool), "Published must be true or false"
     assert isinstance((project.get("tools") or []), list), "Tools must be a list"
     slug = project.get("slug")

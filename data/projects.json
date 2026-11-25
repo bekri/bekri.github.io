@@ -80,6 +80,27 @@
     "slug": "moroccan-wine"
   },
   {
+    "title": "Prism Swarm",
+    "category": "Game dev",
+    "published": true,
+    "image": "/media/prism-swarm/key-art-1920.webp",
+    "thumbnail": "/media/prism-swarm/key-art-960.webp",
+    "description": "A fast neon arcade game made in Godot 4. A swarm of glowing shapes comes at you in red, green and blue. Switch your color to fight the matching ones and slip right through them, grab gems to level up, pick silly power-ups and beat a big boss every five minutes. Entered in the OpenGame Game Jam #1, and free to play in the browser.",
+    "tools": [
+      "Godot 4"
+    ],
+    "role": "Game design, code and art direction",
+    "client": "Personal project",
+    "slug": "prism-swarm",
+    "link": "https://bekri.github.io/prism-swarm/",
+    "gallery": [
+      "/media/prism-swarm/countdown-1920.webp",
+      "/media/prism-swarm/final-exam-1920.webp",
+      "/media/prism-swarm/level-up-1920.webp",
+      "/media/prism-swarm/hydra-1920.webp"
+    ]
+  },
+  {
     "title": "Face Yoga MasterMind: Glow & Flow Sessions",
     "category": "Design",
     "published": true,

@@ -20,7 +20,7 @@ content:
         type: select
         required: true
         options:
-          values: [3D, Design, Illustration, Web & UI]
+          values: [3D, Design, Illustration, Web & UI, Game dev]
       - name: published
         label: Show on portfolio
         type: boolean

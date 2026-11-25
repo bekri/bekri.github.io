@@ -1538,3 +1538,16 @@ a {
 }
 @media (max-width:900px){.feature-link{grid-template-columns:1fr}.feature-inset{right:4%;bottom:-10%}.feature-copy{margin-top:40px}}
 @media (prefers-reduced-motion:reduce){.feature-media>img,.feature-inset{transition:none}}
+
+/* game feature: mirrored layout and a small RGB signal in the game's three colors */
+.feature-game .feature-link{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}
+.feature-game .feature-media{order:2}
+.feature-game .feature-inset{right:auto;left:-6%}
+.feature-game .rgb{display:inline-flex;gap:4px;margin-left:10px;vertical-align:1px}
+.feature-game .rgb b{width:8px;height:8px;border-radius:50%;background:#ff4d63;box-shadow:0 0 8px currentColor;color:#ff4d63}
+.feature-game .rgb b:nth-child(2){background:#4dff88;color:#4dff88}.feature-game .rgb b:nth-child(3){background:#5c9dff;color:#5c9dff}
+@media (hover:hover){
+  .feature-game .feature-link:hover h2{text-shadow:-3px 0 rgba(255,77,99,.7),3px 0 rgba(92,157,255,.7)}
+  .feature-game .feature-link:hover .feature-inset{transform:translate(8px,-8px)}
+}
+@media (max-width:900px){.feature-game .feature-link{grid-template-columns:1fr}.feature-game .feature-media{order:0}.feature-game .feature-inset{left:4%}}
